@@ -157,22 +157,23 @@ a {
 
 /* Icons */
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .icon--primary {
-    fill: var(--primary-color)
+    fill: #fff;
 }
 
 .icon-container {
-    background: #f3f9fa;
+    background: var(--accent-color);
     width: 64px;
     height: 64px;
     border-radius: 100%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin: 4px;
 }
 
 /* Buttons */
@@ -213,5 +214,47 @@ a {
 @media screen and (min-width: 1024px) {
     .button {
         font-size: 1.5rem;
+    }
+}
+
+/* inputs */
+.input {
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: 500;
+    outline: 0;
+    padding: 1.5rem 2.5rem;
+}
+
+.input-group {
+    border: 1px solid #acacac;
+    border-radius: 30px;
+    display: flex;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem
+}
+
+.input-group .icon-container {
+    cursor: pointer;
+}
+
+.input-group .button {
+    margin: 4px;
+}
+
+::placeholder {
+    color: #aba9b6;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.8rem;
     }
 }
