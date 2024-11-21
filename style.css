@@ -258,3 +258,24 @@ a {
         font-size: 1.8rem;
     }
 }
+
+/* Cards */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 15px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card__header, .card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.card--secondary .card__header {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
