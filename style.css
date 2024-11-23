@@ -341,3 +341,75 @@ a {
         right: 8%;
     }
 }
+
+/* Media */
+.media {
+    display: flex;
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
+.media__image {
+    margin-top: .8rem;
+}
+
+/* Quote */
+.quote {
+    font-size: 3rem;
+    font-style: italic;
+    color: #5c5577;
+    line-height: 1.3;
+}
+
+.quote__paragraph::before {
+    content: open-quote;
+}
+
+.quote__paragraph::after {
+    content: close-quote;
+}
+
+.quote__body {
+    font-style: normal;
+    margin: 0 1.4rem;
+}
+
+.quote__author {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.quote__company {
+    font-size: 1.8rem;
+    color:var(--accent-color);
+    opacity: .4;
+}
+
+.quote__line {
+    position: relative;
+    bottom: 3px
+}
+
+@media screen and (min-width: 1024px) {
+    .quote {
+        font-size: 2rem;
+    }
+
+    .quote__author {
+        font-size: 2.4rem;
+    }
+
+    .quote__company {
+        font-size: 1.6rem;
+    }
+
+    .quote__line {
+        bottom: 8px;
+    }
+}
