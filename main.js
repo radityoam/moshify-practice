@@ -15,3 +15,16 @@ collapsibles.forEach((item) => {
     }
   });
 });
+
+function updateSeachTextVisibility() {
+  const searchText = document.querySelector('.input-group__search');
+  if (window.innerWidth < 678) {
+    searchText.classList.add('hidden');
+  } else {
+    searchText.classList.remove('hidden');
+  }
+}
+
+updateSeachTextVisibility()
+
+window.addEventListener('resize', updateSeachTextVisibility);
